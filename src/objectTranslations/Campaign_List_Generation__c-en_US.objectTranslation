@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaign List Generation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campaign List Generation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Campaign Allocation --></label>
+        <name>Additional_Campaign_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Id --></label>
+        <name>Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Campaign List Generation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Members Selected --></label>
+        <name>Members_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Members Added --></label>
+        <name>Memebers_Added__c</name>
+    </fields>
+    <fields>
+        <help><!-- If record distribution = &quot;Percentage&quot; then us this field to determine the percentage of records that are allocated to the primary campaign. --></help>
+        <label><!-- Percentage --></label>
+        <name>Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines how members are added to multiple campaigns. Automatic = evenly distributed, percentage uses the percentage value to determine distribution. --></help>
+        <label><!-- Record Distribution --></label>
+        <name>Record_Distribution__c</name>
+        <picklistValues>
+            <masterLabel>Automatic</masterLabel>
+            <translation><!-- Automatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Percentage</masterLabel>
+            <translation><!-- Use Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Response Fields --></label>
+        <name>Response_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Fields --></label>
+        <name>Transaction_Fields__c</name>
+    </fields>
+    <layouts>
+        <layout>Campaign List Generation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The total allocation must add up to 100% when the distribution method is Percentage --></errorMessage>
+        <name>Allocation_Incorrect</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Copy --></label>
+        <name>Copy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- List_Generation_Batch_Status --></label>
+        <name>List_Generation_Batch_Status</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaign List Generation Criteria</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campaign List Generation Criteria</value>
+    </caseValues>
+    <fields>
+        <label><!-- Calculated Field Type --></label>
+        <name>Calculated_Field_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Operator --></label>
+        <name>Calculated_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign List Generation --></label>
+        <name>Campaign_List_Generation__c</name>
+        <relationshipLabel><!-- Campaign List Generation Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expression --></label>
+        <name>Expression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field API Name --></label>
+        <name>Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field --></label>
+        <name>Field_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Type --></label>
+        <name>Field_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter True or False for boolean fields --></errorMessage>
+        <name>Boolean_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have entered an Invalid Date format. The format for dates is YYYY-MM-DD. e.g. 2012-11-07 = 7th November 2012. Please correct your value and retry. --></errorMessage>
+        <name>DATE_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have entered an invalid number --></errorMessage>
+        <name>Number_Check</name>
+    </validationRules>
+</CustomObjectTranslation>
