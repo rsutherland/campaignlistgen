@@ -12,11 +12,11 @@ global class clsCampaignListSOQLGenerator {
 			}else if (c.Operator__c == 'Contains' || c.Operator__c == 'Does Not Contain'){
 				val = '%' + val + '%';
 			}else if (c.Operator__c.contains ('In Range')){
-				list<String> temp = val.split(',');
+				list<String> temp = val.split(','); 
 				val = '';
 				for (string s : temp){
 					if (s != ''){
-						if (c.Calculated_Field_Type__c == 'STRING'){
+						if (c.Calculated_Field_Type__c == 'STRING'){ 
 							val = val + '\'' + s + '\', ';
 						}else{
 							val = val + s + ', ';
