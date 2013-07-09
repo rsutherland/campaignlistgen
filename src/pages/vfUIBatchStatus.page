@@ -1,6 +1,0 @@
-<apex:page ShowHeader="false" StandardController="Campaign_List_Generation__c" extensions="ctlrBatchStatus">
-	<apex:form id="TheForm">
-		<apex:outputtext value="{!status}"/>
-		<apex:actionPoller action="{!init}" rerender="TheForm" interval="20" status=""/>
-	</apex:form>
-</apex:page>

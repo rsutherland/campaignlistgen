@@ -1,6 +1,0 @@
-<apex:page StandardController="Campaign_List_Generation__c" extensions="ctlrCampaignListCopy" action="{!copy}">
-<apex:form >
- 
- <apex:inputhidden value="{!Campaign_List_Generation__c.Campaign__c}"/>
-</apex:form>
-</apex:page>

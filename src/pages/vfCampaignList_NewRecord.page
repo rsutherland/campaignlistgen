@@ -1,4 +1,0 @@
-<apex:page StandardController="Campaign_List_Generation__c" extensions="ctlrCampaignListGenerator" action="{!newRecord}">
-
-
-</apex:page>
