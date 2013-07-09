@@ -1,0 +1,19 @@
+<apex:page ShowHeader="false" StandardController="AsyncApexJob" >
+<apex:sectionHeader title="Batch Status" subtitle="Batch Id - {!AsyncApexJob.Id}"/>
+	 
+	<apex:form >
+		<apex:pageblock >
+			<apex:pageblocksection collapsible="false" title="Batch Status Detail" columns="1">
+				<apex:outputfield value="{!AsyncApexJob.Status}"/>
+				<apex:outputfield value="{!AsyncApexJob.TotalJobItems}"/>
+				<apex:outputfield value="{!AsyncApexJob.NumberOfErrors}"/>
+				<apex:outputfield value="{!AsyncApexJob.JobItemsProcessed}"/>
+				<apex:outputfield value="{!AsyncApexJob.ExtendedStatus}"/>
+				<apex:outputfield value="{!AsyncApexJob.CreatedDate}"/>
+				<apex:outputfield value="{!AsyncApexJob.CompletedDate}"/>
+				<apex:outputfield value="{!AsyncApexJob.ApexClassId}"/>
+				<apex:outputfield value="{!AsyncApexJob.MethodName}"/>
+			</apex:pageblocksection>
+		</apex:pageblock>
+	</apex:form>
+</apex:page>
