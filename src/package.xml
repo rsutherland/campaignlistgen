@@ -100,10 +100,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>CustomSite</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>CustomTab</name>
     </types>
     <types>
