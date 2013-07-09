@@ -5,7 +5,8 @@ global class clsCampaignListSOQLGenerator {
 															 from Campaign_List_Generation_Criteria__c 
 															 where Campaign_List_Generation__c = :  clist.id];
 		list<String> whereClause = new List<String>();													 
-		for (Campaign_List_Generation_Criteria__c c : crlist){
+		for (Campaign_List_Generation_Criteria__c c : crlist){ 
+			
 			string val = c.Value__c;
 			if (c.Operator__c == 'Starts With'){
 				val = val + '%';
